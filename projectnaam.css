@@ -3,11 +3,189 @@
 
 
 /* Kleuren */
-.color-example {
-    background-color: #bada55;
-}
+:root {
+    --primary-button: #f9ff1e;
+    --primary-hover-button: #000;
+    --secondary-button: #78aaf9;
+    --secondary-hover-button: #000;
+
+     }
 
 /* Typografie */
 
+/* Font import */
+@font-face {
+    font-family: 'DIN Next LT Pro Webfont';
+    src:
+        url("assets/fonts/DIN\ Next\ LT\ Pro\ Regular.otf") format("opentype");
+}
+
+/* General styles */
+body {
+    font-family: 'DIN Next LT Pro Webfont', 'DIN Next LT Arabic Webfont', sans-serif;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+nav,
+button {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3.75rem;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+    line-height: 1em;
+}
+
+@media (min-width: 800px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+h2 {
+    font-size: 1.875rem;
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    line-height: 1.1em;
+}
+
+@media (min-width: 800px) {
+    h2 {
+        font-size: 2.25rem;
+        line-height: 0.95em;
+    }
+}
+
+h3 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    line-height: 1em;
+}
+
+@media (min-width: 800px) {
+    h3 {
+        font-size: 1.875rem;
+    }
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+    line-height: 1em;
+}
+
+h5 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 1.1em;
+}
+
+/* Texts */
+p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1.5em;
+}
+
+.introduction-text {
+    font-size: 1.77rem;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1.2em;
+}
+
+blockquote {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1.2em;
+}
+
+@media (min-width: 800px) {
+    blockquote {
+        font-size: 3.125rem;
+        line-height: 1.15em;
+    }
+}
+
+.caption,
+.tag {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1.5em;
+}
+
+.field-label {
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 2rem;
+}
+
+@media (min-width: 800px) {
+    .footer-bar-link {
+        font-size: 1.25rem;
+    }
+}
+
+.filter-dropdown {
+    font-size: 1.75rem;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1.2em;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+p a {
+    text-decoration: underline;
+    color: inherit;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.footer-bar-link {
+    font-size: 1.125rem;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+    line-height: 1.25rem;
+    color: inherit;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 2rem;
+}
+
+/* Display styles */
+.ticker-bar {
+    font-size: calc(1.75 * 3.75rem);
+    font-weight: normal;
+    letter-spacing: -0.04em;
+    line-height: 1.1em;
+}
 
 /* Formulier elementen */
