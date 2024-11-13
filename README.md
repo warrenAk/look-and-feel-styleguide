@@ -5,8 +5,8 @@ Voorbeeld: AS - Update read me
 
 **Class names
 In kebab-case
-Maak gebruik van kleine letters. Dus geen hoofdletters
-Geef de classes engelse namen
+Maak gebruik van kleine letters. Dus geen hoofdletters!
+Geef de classes engelse namen.
 custom properties in :root
 
 **Colors:
