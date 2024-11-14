@@ -1,8 +1,28 @@
-# Styleguide
+**Hoe kunnen wij onze commits opschrijven:
+Eerste letters van je voor en achternaam en daarna opschrijven wat je hebt gedaan
 
-Ontwerp en maak met een team een styleguide om te gebruiken voor een opdracht van een opdrachtgever.
+Voorbeeld: AS - Update read me
 
-## Licentie
+**Class names
+In kebab-case
+Maak gebruik van kleine letters. Dus geen hoofdletters!
+Geef de classes engelse namen.
+custom properties in :root
 
-This project is licensed under the terms of the [MIT license](./LICENSE).
+**Colors:
 
+primary-background
+
+Buttons:
+
+primary-button
+primary-hover-button
+secondary-button
+secondary-hover-button
+
+Fonts:
+
+primary-font
+secondary-font
+
+bron: https://zeroheight.com/726f8c765/p/85c5a1-colors/b/02439b
