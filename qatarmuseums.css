@@ -4,12 +4,13 @@
 
 /* Kleuren */
 :root {
+    --background-color: #ffffff;
     --primary-button: #f9ff1e;
     --primary-hover-button: #000;
     --secondary-button: #78aaf9;
     --secondary-hover-button: #000;
-    --background-color: #ffffff;
-
+    --stories-button-one:  #464646; 
+    --stories-button-two: #F6C343;
 
      }
 
