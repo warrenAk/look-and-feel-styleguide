@@ -4,25 +4,22 @@ Eerste letters van je voor en achternaam en daarna opschrijven wat je hebt gedaa
 Voorbeeld: AS - Update read me
 
 ### Class names
-In kebab-case
-Maak gebruik van kleine letters. Dus geen hoofdletters!
-Geef de classes engelse namen.
-custom properties in :root
+- In kebab-case
+- Maak gebruik van kleine letters. Dus geen hoofdletters!
+- Geef de classes engelse namen.
+- custom properties in :root
 
 ### Colors
-
-primary-background
+- primary-background
 
 ### Buttons
-
-primary-button
-primary-hover-button
-secondary-button
-secondary-hover-button
+- primary-button
+- primary-hover-button
+- secondary-button
+- secondary-hover-button
 
 ### Fonts
-
-primary-font
-secondary-font
+- primary-font
+- secondary-font
 
 bron: https://zeroheight.com/726f8c765/p/85c5a1-colors/b/02439b
