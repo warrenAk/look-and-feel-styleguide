@@ -8,8 +8,7 @@
     --primary-hover-button: #000;
     --secondary-button: #78aaf9;
     --secondary-hover-button: #000;
-
-     }
+}
 
 /* Typografie */
 
@@ -22,7 +21,7 @@
 
 /* General styles */
 body {
-    font-family: 'DIN Next LT Pro Webfont', 'DIN Next LT Arabic Webfont', sans-serif;
+    font-family: 'DIN Next LT Pro Webfont', sans-serif;
 }
 
 /* Headings */
