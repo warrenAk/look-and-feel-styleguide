@@ -1,26 +1,26 @@
-**Hoe kunnen wij onze commits opschrijven:
+### Hoe kunnen wij onze commits opschrijven?
 Eerste letters van je voor en achternaam en daarna opschrijven wat je hebt gedaan
 
 Voorbeeld: AS - Update read me
 
-**Class names
+### Class names
 In kebab-case
 Maak gebruik van kleine letters. Dus geen hoofdletters!
 Geef de classes engelse namen.
 custom properties in :root
 
-**Colors:
+### Colors
 
 primary-background
 
-Buttons:
+### Buttons
 
 primary-button
 primary-hover-button
 secondary-button
 secondary-hover-button
 
-Fonts:
+### Fonts
 
 primary-font
 secondary-font
