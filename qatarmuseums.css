@@ -1,7 +1,6 @@
 /* Schrijf hier de verschillende stijlen, die gedeeld gaan
    worden door jullie projecten */
 
-
 /* Kleuren */
 :root {
     --primary-button: #f9ff1e;
@@ -19,9 +18,12 @@
         url("assets/fonts/DIN\ Next\ LT\ Pro\ Regular.otf") format("opentype");
 }
 
-/* General styles */
 body {
-    font-family: 'DIN Next LT Pro Webfont', sans-serif;
+    --primary-font: 'DIN Next LT Pro Webfont', sans-serif;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+
+    font-family: var(--primary-font);
 }
 
 /* Headings */
@@ -37,7 +39,7 @@ button {
 
 h1 {
     font-size: 3.75rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-light);
     letter-spacing: -0.05em;
     line-height: 1em;
 }
@@ -50,7 +52,7 @@ h1 {
 
 h2 {
     font-size: 1.875rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-light);
     letter-spacing: -0.04em;
     line-height: 1.1em;
 }
@@ -64,7 +66,7 @@ h2 {
 
 h3 {
     font-size: 1.625rem;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     letter-spacing: -0.04em;
     line-height: 1em;
 }
@@ -91,21 +93,14 @@ h5 {
 /* Texts */
 p {
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-light);
     letter-spacing: -0.02em;
     line-height: 1.5em;
 }
 
-.introduction-text {
-    font-size: 1.77rem;
-    font-weight: 300;
-    letter-spacing: -0.02em;
-    line-height: 1.2em;
-}
-
 blockquote {
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-light);
     letter-spacing: -0.02em;
     line-height: 1.2em;
 }
@@ -117,17 +112,24 @@ blockquote {
     }
 }
 
+.introduction-text {
+    font-size: 1.77rem;
+    font-weight: var(--font-weight-light);
+    letter-spacing: -0.02em;
+    line-height: 1.2em;
+}
+
 .caption,
 .tag {
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-light);
     letter-spacing: -0.02em;
     line-height: 1.5em;
 }
 
 .field-label {
     font-size: 1rem;
-    font-weight: normal;
+    font-weight: var(--font-weight-normal);
     letter-spacing: 0;
     line-height: 2rem;
 }
@@ -140,7 +142,7 @@ blockquote {
 
 .filter-dropdown {
     font-size: 1.75rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-light);
     letter-spacing: -0.02em;
     line-height: 1.2em;
 }
@@ -164,6 +166,13 @@ p a {
     }
 }
 
+button {
+    font-size: 1rem;
+    font-weight: var(--font-weight-normal);
+    letter-spacing: -0.02em;
+    line-height: 2rem;
+}
+
 .footer-bar-link {
     font-size: 1.125rem;
     font-weight: bold;
@@ -172,17 +181,10 @@ p a {
     color: inherit;
 }
 
-button {
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    line-height: 2rem;
-}
-
 /* Display styles */
 .ticker-bar {
     font-size: calc(1.75 * 3.75rem);
-    font-weight: normal;
+    font-weight: var(--font-weight-normal);
     letter-spacing: -0.04em;
     line-height: 1.1em;
 }
