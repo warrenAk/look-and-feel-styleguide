@@ -14,16 +14,27 @@
 /* Font import */
 @font-face {
     font-family: 'DIN Next LT Pro Webfont';
-    src:
-        url("assets/fonts/DIN\ Next\ LT\ Pro\ Regular.otf") format("opentype");
+    src: url("fonts/DIN\ Next\ LT\ Pro\ Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'DIN Next LT Arabic Webfont';
+    src: url("fonts/din-next-lt-arabic-regular.ttf") format("truetype");
 }
 
 body {
     --primary-font: 'DIN Next LT Pro Webfont', sans-serif;
+    --primary-font-ar: 'DIN Next LT Arabic Webfont', sans-serif;
+
     --font-weight-light: 300;
     --font-weight-normal: 400;
+    --font-weight-bold: 700;
 
     font-family: var(--primary-font);
+}
+
+*:lang(ar) {
+    font-family: var(--primary-font-ar);
 }
 
 /* Headings */
@@ -79,14 +90,14 @@ h3 {
 
 h4 {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
     letter-spacing: -0.04em;
     line-height: 1em;
 }
 
 h5 {
     font-size: 1.125rem;
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
     line-height: 1.1em;
 }
 
@@ -166,7 +177,7 @@ p a {
     }
 }
 
-button {
+.button-link {
     font-size: 1rem;
     font-weight: var(--font-weight-normal);
     letter-spacing: -0.02em;
@@ -175,7 +186,7 @@ button {
 
 .footer-bar-link {
     font-size: 1.125rem;
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
     letter-spacing: -0.02em;
     line-height: 1.25rem;
     color: inherit;

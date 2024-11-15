@@ -1,5 +1,5 @@
 ### Hoe kunnen wij onze commits opschrijven?
-Eerste letters van je voor en achternaam en daarna opschrijven wat je hebt gedaan
+Eerste letters van je voor en achternaam en daarna opschrijven wat je hebt gedaan.
 
 Voorbeeld: AS - Update read me
 
@@ -7,7 +7,7 @@ Voorbeeld: AS - Update read me
 - In kebab-case
 - Maak gebruik van kleine letters. Dus geen hoofdletters!
 - Geef de classes engelse namen.
-- custom properties in :root
+- Custom properties in :root
 
 ### Colors
 - primary-background
