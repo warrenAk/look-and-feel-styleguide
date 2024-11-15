@@ -3,7 +3,7 @@
 
 
 /* Kleuren */
-:root {
+/* .body { 
     --background-color: #ffffff;
     --primary-button: #f9ff1e;
     --primary-hover-button: #000;
@@ -12,8 +12,37 @@
     --stories-button-one:  #464646; 
     --stories-button-two: #F6C343;
 
-     }
+} */
 
+.background-color {
+   background-color: #ffff;
+
+}
+
+.primary-button {
+    background-color: #f9ff1e;
+
+}
+
+.primary-hover-button {
+    background-color: #000;
+}
+
+.secondary-button {
+    background-color: #78aaf9;
+}
+
+.secondary-hover-button {
+    background-color: #000;
+}
+   
+.stories-button-one {
+    background-color:#464646;
+}
+
+.stories-button-two {
+    background-color: #F6C343;
+}
 /* Typografie */
 
 
