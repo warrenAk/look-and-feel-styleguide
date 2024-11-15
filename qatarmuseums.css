@@ -8,10 +8,13 @@
     --primary-hover-button: #000;
     --secondary-button: #78aaf9;
     --secondary-hover-button: #000;
+    --background-color: #ffffff;
+
 
      }
 
 /* Typografie */
+
 
 /* Font import */
 @font-face {
