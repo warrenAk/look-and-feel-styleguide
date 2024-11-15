@@ -10,13 +10,23 @@ Voorbeeld: AS - Update read me
 - Custom properties in :root
 
 ### Colors
- --background-color: #ffffff;
- --primary-button: #f9ff1e;
+
+--background-color: #ffffff;
+
+--primary-button: #f9ff1e;
+
 --primary-hover-button: #000;
+
 --secondary-button: #78aaf9;
+
 --secondary-hover-button: #000;
+
 --stories-button-one:  #464646; 
+
 --stories-button-two: #F6C343;
+
+<img width="339" alt="Screenshot 2024-11-15 at 15 31 17" src="https://github.com/user-attachments/assets/65edc13b-29f7-445e-b0a3-ad94c8194584">
+
 
 ### Buttons
 - primary-button
