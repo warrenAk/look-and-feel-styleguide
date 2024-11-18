@@ -149,7 +149,7 @@ nav {
     line-height: 1.5em;
 }
 
-.quote {
+.text-quote {
     /* blockquote */
     font-size: 2rem;
     font-weight: var(--font-weight-light);
@@ -158,41 +158,35 @@ nav {
 }
 
 @media (min-width: 800px) {
-    .quote {
+    .text-quote {
         font-size: 3.125rem;
         line-height: 1.15em;
     }
 }
 
-.introduction-text {
+.text-introduction {
     font-size: 1.77rem;
     font-weight: var(--font-weight-light);
     letter-spacing: -0.02em;
     line-height: 1.2em;
 }
 
-.caption,
-.tag {
+.text-caption,
+.text-tag {
     font-size: 1rem;
     font-weight: var(--font-weight-light);
     letter-spacing: -0.02em;
     line-height: 1.5em;
 }
 
-.field-label {
+.text-field-label {
     font-size: 1rem;
     font-weight: var(--font-weight-normal);
     letter-spacing: 0;
     line-height: 2rem;
 }
 
-@media (min-width: 800px) {
-    .footer-bar-link {
-        font-size: 1.25rem;
-    }
-}
-
-.filter-dropdown {
+.text-filter-dropdown {
     font-size: 1.75rem;
     font-weight: var(--font-weight-light);
     letter-spacing: -0.02em;
@@ -201,7 +195,6 @@ nav {
 
 /* Links */
 .link {
-    /* a */
     text-decoration: none;
     color: inherit;
 
@@ -210,7 +203,7 @@ nav {
     }
 }
 
-.paragraph-link {
+.link-paragraph {
     text-decoration: underline;
     color: inherit;
 
@@ -219,14 +212,14 @@ nav {
     }
 }
 
-.button-link {
+.link-button {
     font-size: 1rem;
     font-weight: var(--font-weight-normal);
     letter-spacing: -0.02em;
     line-height: 2rem;
 }
 
-.footer-bar-link {
+.link-footer-bar {
     font-size: 1.125rem;
     font-weight: var(--font-weight-bold);
     letter-spacing: -0.02em;
@@ -234,16 +227,23 @@ nav {
     color: inherit;
 }
 
+@media (min-width: 800px) {
+    .link-footer-bar {
+        font-size: 1.25rem;
+    }
+}
+
 /* Display styles */
-.ticker-bar {
+.text-ticker-bar {
     font-size: calc(1.75 * 3.75rem);
     font-weight: var(--font-weight-normal);
     letter-spacing: -0.04em;
     line-height: 1.1em;
 }
 
-/* Formulier elementen */
+/* FORMULIER ELEMENTEN */
 
+/* Buttons */
 .button {
     /* Typography */
     --button-font-size: 1rem;
