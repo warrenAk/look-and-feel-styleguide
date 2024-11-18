@@ -77,6 +77,7 @@ body {
 .header-m,
 .header-s,
 .button-link,
+.button,
 nav {
     text-transform: uppercase;
 }
@@ -242,3 +243,33 @@ nav {
 }
 
 /* Formulier elementen */
+
+.button {
+    /* Typography */
+    --button-font-size: 1rem;
+    --button-letter-spacing: -0.02em;
+    --button-line-height: 2rem;
+
+    font-family: var(--primary-font);
+    font-size: var(--button-font-size);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--button-letter-spacing);
+    line-height: var(--button-line-height);
+
+    /* Removes default button styling */
+    border-block-end: 1px solid transparent;
+    border-block-start: 1px solid transparent;
+    border-inline-end: 1px solid transparent;
+    border-inline-start: 1px solid transparent;
+    border-radius: 0;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Sizing and positioning */
+    max-width: min(100%, 320px);
+    min-width: 100px;
+    padding-block: 0.8rem 0.8rem;
+    padding-inline: 1rem 1rem;
+    text-align: center;
+}
