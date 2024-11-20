@@ -14,6 +14,10 @@
 
 } */
 
+:root{
+    --color-black: #000;
+}
+
 .background-color {
     background-color: #ffff;
 }
@@ -242,6 +246,24 @@ nav {
 }
 
 /* FORMULIER ELEMENTEN */
+.table{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-collapse: collapse;
+    border-color: #000; 
+    border-width: 0;
+    border-spacing: 2px; 
+}
+
+/*LISTS*/
+.vertical-list{
+    display: block;
+    border-width: 0;
+    box-sizing: border-box;
+    margin-block: 0; /* Voor zowel margin-top als margin-bottom */
+    color: var(--color-black); /* Zorg ervoor dat --color-black is gedefinieerd in :root */
+}
+
 
 /* Buttons */
 .button {
