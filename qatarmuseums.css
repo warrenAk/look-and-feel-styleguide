@@ -2,22 +2,15 @@
    worden door jullie projecten */
 
 
-/* Kleuren */
-/* .body { 
-    --background-color: #ffffff;
-    --primary-button: #f9ff1e;
-    --primary-hover-button: #000;
-    --secondary-button: #78aaf9;
-    --secondary-hover-button: #000;
-    --stories-button-one:  #464646; 
-    --stories-button-two: #F6C343;
-
-} */
-
-.background-color {
+.primary-background-color {
    background-color: #ffff;
 
 }
+
+.secondary-background-color {
+    background-color: #ffe40c;
+ 
+ }
 
 .primary-button {
     background-color: #f9ff1e;
@@ -28,7 +21,7 @@
     background-color: #000;
 }
 
-.secondary-button {
+.accent-color-blue {
     background-color: #78aaf9;
 }
 
@@ -36,12 +29,19 @@
     background-color: #000;
 }
    
-.stories-button-one {
+.accent-color-grey {
     background-color:#464646;
 }
 
-.stories-button-two {
+.accent-color-orange {
     background-color: #F6C343;
+}
+
+.primary-text-color {
+    background-color: #000;
+}
+.secondary-text-color {
+    background-color: #fffdfd;
 }
 /* Typografie */
 
