@@ -4,7 +4,6 @@
 
 .primary-background-color {
    background-color: #ffff;
-
 }
 
 .secondary-background-color {
@@ -14,7 +13,6 @@
 
 .primary-button {
     background-color: #f9ff1e;
-
 }
 
 .primary-hover-button {
@@ -45,142 +43,159 @@
 }
 /* Typografie */
 
+/* TYPOGRAPHY */
 
 /* Font import */
 @font-face {
     font-family: 'DIN Next LT Pro Webfont';
-    src:
-        url("assets/fonts/DIN\ Next\ LT\ Pro\ Regular.otf") format("opentype");
+    src: url("fonts/DIN\ Next\ LT\ Pro\ Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'DIN Next LT Arabic Webfont';
+    src: url("fonts/din-next-lt-arabic-regular.ttf") format("truetype");
 }
 
 /* General styles */
 body {
-    font-family: 'DIN Next LT Pro Webfont', 'DIN Next LT Arabic Webfont', sans-serif;
+    --primary-font: 'DIN Next LT Pro Webfont', sans-serif;
+    --primary-font-ar: 'DIN Next LT Arabic Webfont', sans-serif;
+
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    font-family: var(--primary-font);
+}
+
+*:lang(ar) {
+    font-family: var(--primary-font-ar);
+    text-align: right;
 }
 
 /* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-nav,
-button {
+.header-xl,
+.header-m,
+.header-s,
+.button-link,
+.button,
+nav {
     text-transform: uppercase;
 }
 
-h1 {
+.header-xl {
+    /* h1 */
     font-size: 3.75rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-light);
     letter-spacing: -0.05em;
     line-height: 1em;
 }
 
 @media (min-width: 800px) {
-    h1 {
+    .header-xl {
         font-size: 5rem;
     }
 }
 
-h2 {
+.header-l {
+    /* h2 */
     font-size: 1.875rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-light);
     letter-spacing: -0.04em;
     line-height: 1.1em;
 }
 
 @media (min-width: 800px) {
-    h2 {
+    .header-l {
         font-size: 2.25rem;
         line-height: 0.95em;
     }
 }
 
-h3 {
+.header-m {
+    /* h3 */
     font-size: 1.625rem;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     letter-spacing: -0.04em;
     line-height: 1em;
 }
 
 @media (min-width: 800px) {
-    h3 {
+    .header-m {
         font-size: 1.875rem;
     }
 }
 
-h4 {
+.header-s {
+    /* h4 */
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
     letter-spacing: -0.04em;
     line-height: 1em;
 }
 
-h5 {
+.header-xs {
+    /* h5 */
     font-size: 1.125rem;
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
     line-height: 1.1em;
 }
 
 /* Texts */
-p {
+.text {
+    /* p */
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-light);
     letter-spacing: -0.02em;
     line-height: 1.5em;
 }
 
-.introduction-text {
-    font-size: 1.77rem;
-    font-weight: 300;
-    letter-spacing: -0.02em;
-    line-height: 1.2em;
-}
-
-blockquote {
+.text-quote {
+    /* blockquote */
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-light);
     letter-spacing: -0.02em;
     line-height: 1.2em;
 }
 
 @media (min-width: 800px) {
-    blockquote {
+    .text-quote {
         font-size: 3.125rem;
         line-height: 1.15em;
     }
 }
 
-.caption,
-.tag {
+.text-introduction {
+    font-size: 1.77rem;
+    font-weight: var(--font-weight-light);
+    letter-spacing: -0.02em;
+    line-height: 1.2em;
+}
+
+.text-caption,
+.text-tag {
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-light);
     letter-spacing: -0.02em;
     line-height: 1.5em;
 }
 
-.field-label {
+.text-field-label {
     font-size: 1rem;
-    font-weight: normal;
+    font-weight: var(--font-weight-normal);
     letter-spacing: 0;
     line-height: 2rem;
 }
 
-@media (min-width: 800px) {
-    .footer-bar-link {
-        font-size: 1.25rem;
-    }
-}
-
-.filter-dropdown {
+.text-filter-dropdown {
     font-size: 1.75rem;
-    font-weight: 300;
+    font-weight: var(--font-weight-light);
     letter-spacing: -0.02em;
     line-height: 1.2em;
 }
 
 /* Links */
-a {
+.link {
     text-decoration: none;
     color: inherit;
 
@@ -189,7 +204,7 @@ a {
     }
 }
 
-p a {
+.link-paragraph {
     text-decoration: underline;
     color: inherit;
 
@@ -198,27 +213,107 @@ p a {
     }
 }
 
-.footer-bar-link {
+.link-button {
+    font-size: 1rem;
+    font-weight: var(--font-weight-normal);
+    letter-spacing: -0.02em;
+    line-height: 2rem;
+}
+
+.link-footer-bar {
     font-size: 1.125rem;
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
     letter-spacing: -0.02em;
     line-height: 1.25rem;
     color: inherit;
 }
 
-button {
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    line-height: 2rem;
+@media (min-width: 800px) {
+    .link-footer-bar {
+        font-size: 1.25rem;
+    }
 }
 
 /* Display styles */
-.ticker-bar {
+.text-ticker-bar {
     font-size: calc(1.75 * 3.75rem);
-    font-weight: normal;
+    font-weight: var(--font-weight-normal);
     letter-spacing: -0.04em;
     line-height: 1.1em;
 }
 
-/* Formulier elementen */
+/* FORMULIER ELEMENTEN */
+.table {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-collapse: collapse;
+    border-color: #000;
+    border-width: 0;
+    border-spacing: 2px;
+}
+
+/*LISTS*/
+.vertical-list {
+    display: block;
+    border-width: 0;
+    box-sizing: border-box;
+    margin-block: 0;
+    /* Voor zowel margin-top als margin-bottom */
+    color: var(--color-black);
+    /* Zorg ervoor dat --color-black is gedefinieerd in :root */
+}
+
+
+/* Buttons */
+.button {
+    /* Typography */
+    --button-font-size: 1rem;
+    --button-letter-spacing: -0.02em;
+    --button-line-height: 2rem;
+
+    font-family: var(--primary-font);
+    font-size: var(--button-font-size);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--button-letter-spacing);
+    line-height: var(--button-line-height);
+
+    /* Removes default button styling */
+    border-block-end: 1px solid transparent;
+    border-block-start: 1px solid transparent;
+    border-inline-end: 1px solid transparent;
+    border-inline-start: 1px solid transparent;
+    border-radius: 0;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Sizing and positioning */
+    max-width: min(100%, 320px);
+    min-width: 100px;
+    padding-block: 0.8rem 0.8rem;
+    padding-inline: 1rem 1rem;
+    text-align: center;
+}
+
+/* Checkboxes */
+.checkbox-label {
+    display: inline-flex;
+    align-items: center;
+}
+.checkbox {
+    box-sizing: border-box;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: .5rem;
+    padding: 0;
+    appearance: none;
+    box-shadow: 0 0 0 1px #464646;
+    border: 2px solid white;
+    transition: 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    padding: 2px;
+    background-color: #464646;
+}
