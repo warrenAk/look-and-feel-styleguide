@@ -297,20 +297,26 @@ nav {
 
 /* Checkboxes */
 .checkbox-label {
+    /* Positioning */
     display: inline-flex;
     align-items: center;
+
+    /* Cursor */
+    cursor: pointer;
 }
 .checkbox {
+    /* Sizing and positioning */
     box-sizing: border-box;
     width: 1.25rem;
     height: 1.25rem;
     margin: .5rem;
     padding: 0;
+
+    /* Appearance */
     appearance: none;
     box-shadow: 0 0 0 1px #464646;
     border: 2px solid white;
     transition: 1.5s ease-in-out;
-    cursor: pointer;
 }
 
 input[type="checkbox"]:checked {
