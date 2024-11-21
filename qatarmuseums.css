@@ -3,39 +3,34 @@
 
 
 :root {
-
-    /*Background colors*/
-
+    /* Background colors */
     --primary-background-color: #ffff;
     --secondary-background-color: #ffe40c;
 
-    /*Button colors*/
-
+    /* Button colors */
     --primary-button: #f9ff1e;
     --primary-hover-button: #000;
 
+    /* Accent colors */
+    --accent-color-blue: #78aaf9;
+    --accent-color-grey: #464646;
+    --accent-color-orange: #F6C343;
 
-     /* Accent colors */
-     --accent-color-blue: #78aaf9;
-     --accent-color-grey: #464646;
-     --accent-color-orange: #F6C343;
-
-
-      /* Text colors */
+    /* Text colors */
     --primary-text-color: #000;
     --secondary-text-color: #fffdfd;
 
 }
 
 .primary-background-color {
-    background-color:#ffff
+    background-color: #ffff
 }
 
 .secondary-background-color {
-    background-color:#ffe40c
+    background-color: #ffe40c
 }
 
-.primary-button{
+.primary-button {
     background-color: #f9ff1e;
 }
 
@@ -44,23 +39,23 @@
 }
 
 .accent-color-blue {
-    background-color:#78aaf9;
+    background-color: #78aaf9;
 }
 
 .accent-color-grey {
-    background-color:#464646;
+    background-color: #464646;
 }
 
 .accent-color-orange {
-    background-color:#F6C343;
+    background-color: #F6C343;
 }
 
 .primary-text-color {
-    background-color:#000;
+    background-color: #000;
 }
 
 .secondary-text-color {
-    background-color:#fffdfd;
+    background-color: #fffdfd;
 }
 
 /* Typografie */
@@ -305,6 +300,7 @@ nav {
     border-inline-end: 1px solid transparent;
     border-inline-start: 1px solid transparent;
     border-radius: 0;
+    border-color: var(--primary-hover-button);
 
     /* Cursor */
     cursor: pointer;
@@ -315,6 +311,28 @@ nav {
     padding-block: 0.8rem 0.8rem;
     padding-inline: 1rem 1rem;
     text-align: center;
+
+    transition: all 350ms ease-out;
+}
+
+.button-primary {
+    background-color: var(--primary-button);
+    color: var(--primary-text-color);
+
+    &:hover {
+        background-color: var(--primary-hover-button);
+        color: var(--secondary-text-color);
+    }
+}
+
+.button-outline {
+    background-color: transparent;
+    color: var(--primary-text-color);
+
+    &:hover {
+        background-color: var(--primary-hover-button);
+        color: var(--secondary-text-color);
+    }
 }
 
 /* Checkboxes */
@@ -326,6 +344,7 @@ nav {
     /* Cursor */
     cursor: pointer;
 }
+
 .checkbox {
     /* Sizing and positioning */
     box-sizing: border-box;
@@ -336,17 +355,14 @@ nav {
 
     /* Appearance */
     appearance: none;
-    box-shadow: 0 0 0 1px #464646;
+    box-shadow: 0 0 0 1px var(--accent-color-grey);
     border: 2px solid white;
     transition: 1.5s ease-in-out;
 }
 
 input[type="checkbox"]:checked {
     padding: 2px;
-    background-color: #464646;
+    background-color: var(--accent-color-grey)
 }
 
-.radio {
-
-    
-}
+.radio {}
