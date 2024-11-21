@@ -14,7 +14,7 @@
 
 } */
 
-:root{
+:root {
     --color-black: #000;
 }
 
@@ -246,22 +246,24 @@ nav {
 }
 
 /* FORMULIER ELEMENTEN */
-.table{
+.table {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-collapse: collapse;
-    border-color: #000; 
+    border-color: #000;
     border-width: 0;
-    border-spacing: 2px; 
+    border-spacing: 2px;
 }
 
 /*LISTS*/
-.vertical-list{
+.vertical-list {
     display: block;
     border-width: 0;
     box-sizing: border-box;
-    margin-block: 0; /* Voor zowel margin-top als margin-bottom */
-    color: var(--color-black); /* Zorg ervoor dat --color-black is gedefinieerd in :root */
+    margin-block: 0;
+    /* Voor zowel margin-top als margin-bottom */
+    color: var(--color-black);
+    /* Zorg ervoor dat --color-black is gedefinieerd in :root */
 }
 
 
@@ -294,4 +296,27 @@ nav {
     padding-block: 0.8rem 0.8rem;
     padding-inline: 1rem 1rem;
     text-align: center;
+}
+
+/* Checkboxes */
+.checkbox-label {
+    display: inline-flex;
+    align-items: center;
+}
+.checkbox {
+    box-sizing: border-box;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: .5rem;
+    padding: 0;
+    appearance: none;
+    box-shadow: 0 0 0 1px #464646;
+    border: 2px solid white;
+    transition: 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    padding: 2px;
+    background-color: #464646;
 }
