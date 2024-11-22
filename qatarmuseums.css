@@ -284,6 +284,29 @@ nav {
     color: var(--color-black);
 }
 
+.horizontal-list {
+    display: flex;
+    flex: 0 1 auto;
+    font-size: 0;
+    list-style: none;
+    padding-block: 1.5rem; 
+    padding-inline: 0; 
+    position: relative;
+    text-align: left;
+    color: var(--color-black);
+}
+
+.input-forms {
+    font-family: var(--paragraph-font-family);
+    padding-block-start: 23px;
+    position: relative;
+    font-feature-settings: var(--paragraph-font-feature-settings);
+    font-size: var(--paragraph-font-size);
+    font-style: var(--paragraph-font-style);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1.5em;
+}
 
 /* Buttons */
 .button {
