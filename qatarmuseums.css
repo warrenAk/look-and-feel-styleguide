@@ -1,6 +1,9 @@
 /* Schrijf hier de verschillende stijlen, die gedeeld gaan
    worden door jullie projecten */
 
+/* ****** */
+/* COLORS */
+/* ****** */
 
 :root {
     /* Background colors */
@@ -58,9 +61,9 @@
     background-color: #fffdfd;
 }
 
-/* Typografie */
-
+/* ********** */
 /* TYPOGRAPHY */
+/* ********** */
 
 /* Font import */
 @font-face {
@@ -259,7 +262,10 @@ nav {
     line-height: 1.1em;
 }
 
+/* ******************* */
 /* FORMULIER ELEMENTEN */
+/* ******************* */
+
 .table {
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -269,15 +275,13 @@ nav {
     border-spacing: 2px;
 }
 
-/*LISTS*/
+/* Lists*/
 .vertical-list {
     display: block;
     border-width: 0;
     box-sizing: border-box;
     margin-block: 0;
-    /* Voor zowel margin-top als margin-bottom */
     color: var(--color-black);
-    /* Zorg ervoor dat --color-black is gedefinieerd in :root */
 }
 
 
@@ -360,9 +364,11 @@ nav {
     transition: 1.5s ease-in-out;
 }
 
-input[type="checkbox"]:checked {
+.checkbox:checked {
     padding: 2px;
     background-color: var(--accent-color-grey)
 }
+
+/* Radio buttons */
 
 .radio {}
