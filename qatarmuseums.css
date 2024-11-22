@@ -67,23 +67,46 @@
 
 /* Font import */
 @font-face {
-    font-family: 'DIN Next LT Pro Webfont';
-    src: url("fonts/DIN\ Next\ LT\ Pro\ Regular.otf") format("opentype");
+    font-family: 'DIN Next LT Pro';
+    src: url("fonts/din-next-lt-pro-regular.woff2") format("woff2");
+    font-weight: 400;
 }
 
 @font-face {
-    font-family: 'DIN Next LT Arabic Webfont';
-    src: url("fonts/din-next-lt-arabic-regular.ttf") format("truetype");
+    font-family: 'DIN Next LT Pro';
+    src: url("fonts/din-next-lt-pro-bold.woff2") format("woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: url("fonts/din-next-lt-pro-light.woff2") format("woff2");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Arabic';
+    src: url("fonts/din-next-lt-arabic-bold.woff2") format("woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Arabic';
+    src: url("fonts/din-next-lt-arabic-light.woff2") format("woff2");
+    font-weight: 300;
 }
 
 /* General styles */
 body {
-    --primary-font: 'DIN Next LT Pro Webfont', sans-serif;
-    --primary-font-ar: 'DIN Next LT Arabic Webfont', sans-serif;
+    --primary-font: 'DIN Next LT Pro', sans-serif;
+    --primary-font-ar: 'DIN Next LT Arabic', sans-serif;
 
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
+
+    --letter-spacing-s: -0.04em;
+    --letter-spacing-m: -0.02em;
 
     font-family: var(--primary-font);
 }
@@ -121,7 +144,7 @@ nav {
     /* h2 */
     font-size: 1.875rem;
     font-weight: var(--font-weight-light);
-    letter-spacing: -0.04em;
+    letter-spacing: var(--letter-spacing-s);
     line-height: 1.1em;
 }
 
@@ -136,7 +159,7 @@ nav {
     /* h3 */
     font-size: 1.625rem;
     font-weight: var(--font-weight-normal);
-    letter-spacing: -0.04em;
+    letter-spacing: var(--letter-spacing-s);
     line-height: 1em;
 }
 
@@ -150,7 +173,7 @@ nav {
     /* h4 */
     font-size: 1.5rem;
     font-weight: var(--font-weight-bold);
-    letter-spacing: -0.04em;
+    letter-spacing: var(--letter-spacing-s);
     line-height: 1em;
 }
 
@@ -166,7 +189,7 @@ nav {
     /* p */
     font-size: 1.2rem;
     font-weight: var(--font-weight-light);
-    letter-spacing: -0.02em;
+    letter-spacing: var(--letter-spacing-m);
     line-height: 1.5em;
 }
 
@@ -174,7 +197,7 @@ nav {
     /* blockquote */
     font-size: 2rem;
     font-weight: var(--font-weight-light);
-    letter-spacing: -0.02em;
+    letter-spacing: var(--letter-spacing-m);
     line-height: 1.2em;
 }
 
@@ -188,7 +211,7 @@ nav {
 .text-introduction {
     font-size: 1.77rem;
     font-weight: var(--font-weight-light);
-    letter-spacing: -0.02em;
+    letter-spacing: var(--letter-spacing-m);
     line-height: 1.2em;
 }
 
@@ -196,7 +219,7 @@ nav {
 .text-tag {
     font-size: 1rem;
     font-weight: var(--font-weight-light);
-    letter-spacing: -0.02em;
+    letter-spacing: var(--letter-spacing-m);
     line-height: 1.5em;
 }
 
@@ -210,7 +233,7 @@ nav {
 .text-filter-dropdown {
     font-size: 1.75rem;
     font-weight: var(--font-weight-light);
-    letter-spacing: -0.02em;
+    letter-spacing: var(--letter-spacing-m);
     line-height: 1.2em;
 }
 
@@ -236,14 +259,14 @@ nav {
 .link-button {
     font-size: 1rem;
     font-weight: var(--font-weight-normal);
-    letter-spacing: -0.02em;
+    letter-spacing: var(--letter-spacing-m);
     line-height: 2rem;
 }
 
 .link-footer-bar {
     font-size: 1.125rem;
     font-weight: var(--font-weight-bold);
-    letter-spacing: -0.02em;
+    letter-spacing: var(--letter-spacing-m);
     line-height: 1.25rem;
     color: inherit;
 }
@@ -258,7 +281,7 @@ nav {
 .text-ticker-bar {
     font-size: calc(1.75 * 3.75rem);
     font-weight: var(--font-weight-normal);
-    letter-spacing: -0.04em;
+    letter-spacing: var(--letter-spacing-s);
     line-height: 1.1em;
 }
 
@@ -289,8 +312,8 @@ nav {
     flex: 0 1 auto;
     font-size: 0;
     list-style: none;
-    padding-block: 1.5rem; 
-    padding-inline: 0; 
+    padding-block: 1.5rem;
+    padding-inline: 0;
     position: relative;
     text-align: left;
     color: var(--color-black);
@@ -304,7 +327,7 @@ nav {
     font-size: var(--paragraph-font-size);
     font-style: var(--paragraph-font-style);
     font-weight: 300;
-    letter-spacing: -0.02em;
+    letter-spacing: var(--letter-spacing-m);
     line-height: 1.5em;
 }
 
@@ -312,7 +335,7 @@ nav {
 .button {
     /* Typography */
     --button-font-size: 1rem;
-    --button-letter-spacing: -0.02em;
+    --button-letter-spacing: var(--letter-spacing-m);
     --button-line-height: 2rem;
 
     font-family: var(--primary-font);
