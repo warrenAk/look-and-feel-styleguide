@@ -1,3 +1,5 @@
+# LIVE LINK: https://warrenak.github.io/look-and-feel-styleguide/
+
 ### Hoe kunnen wij onze commits opschrijven?
 Eerste letters van je voor en achternaam en daarna opschrijven wat je hebt gedaan.
 
