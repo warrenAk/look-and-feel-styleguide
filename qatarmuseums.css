@@ -114,6 +114,10 @@ body {
     font-family: var(--primary-font);
 }
 
+nav {
+    font-weight: var(--font-weight-bold);
+}
+
 *:lang(ar) {
     font-family: var(--primary-font-ar);
     text-align: right;
@@ -343,7 +347,7 @@ nav {
 
     font-family: var(--primary-font);
     font-size: var(--button-font-size);
-    font-weight: var(--font-weight-normal);
+    font-weight: inherit;
     letter-spacing: var(--button-letter-spacing);
     line-height: var(--button-line-height);
 
@@ -400,6 +404,11 @@ nav {
 .button-clean {
     background-color: transparent;
     border-color: transparent;
+    padding-inline: 0.5rem 0.5rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 /* Checkboxes */
@@ -424,7 +433,7 @@ nav {
     appearance: none;
     box-shadow: 0 0 0 1px var(--accent-color-grey);
     border: 2px solid white;
-    transition: 1.5s ease-in-out;
+    transition: .5s ease-out;
 }
 
 .checkbox:checked {
@@ -434,4 +443,7 @@ nav {
 
 /* Radio buttons */
 
-.radio {}
+.radio {
+
+    
+}
