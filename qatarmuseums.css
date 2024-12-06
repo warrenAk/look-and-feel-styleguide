@@ -3,7 +3,7 @@
   | | | |/ _` | __/ _` | '__| | |\/| | | | / __|/ _ \ | | | '_ ` _ \/ __|
   | |_| | (_| | || (_| | |    | |  | | |_| \__ \  __/ |_| | | | | | \__ \
    \__\_\\__,_|\__\__,_|_|    |_|  |_|\__,_|___/\___|\__,_|_| |_| |_|___/ */
-   
+
 /* ****** */
 /* COLORS */
 /* ****** */
@@ -444,6 +444,73 @@ nav {
 /* Radio buttons */
 
 .radio {
+    appearance: none;
+    height: 1.25em;
+    width: 1.25em;
+    margin: 0 .5em 0 0;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1.25em;
+}
 
-    
+.radio:checked {
+    background-color: black;
+}
+
+/* Form elements */
+
+.input {
+/*  use for:
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    option,
+    select 
+*/
+    font-size: 1.2rem;
+    padding: 0.5em;
+    text-transform: none;
+    font-family: var(--primary-font);
+    color: var(--accent-color-grey);
+
+    appearance: none;
+    border: 1px solid black;
+    width: 20rem;
+}
+
+/* LABELS */
+
+.label {
+    display: grid;
+    cursor: inherit;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.label span {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    top: -1em;
+    left: 1em;
+    padding: 0.2em;
+}
+
+.label:has(input:not([type=radio])),
+.label:has(select) {
+    margin: 3rem 0;
+}
+
+.label:has(input:invalid) input,
+.label:has(input:invalid) span {
+    border-color: red;
+    color: red;
+}
+
+/* FIELDSET */
+
+.fieldset {
+    appearance: none;
+    border: none;
+    margin: 1rem 0;
 }
